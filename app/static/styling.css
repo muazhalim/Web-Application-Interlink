@@ -1,0 +1,107 @@
+body {
+    background-color: #f6f2d5;
+}
+
+.card-post {
+  background-color: #ebe7c8;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-post:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-custom {
+  background-color: #ebe7c8;
+  color: #fff;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: #333;
+}
+
+  .card-text.lead {
+    font-family:Georgia;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+  }
+
+    .inputTitle-feed {
+    font-weight: bold;
+    color: #333;
+    font-size: 30px;
+  }
+
+#button-profile {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: 1px solid #6c757d; /* Border color for the button */
+    color: #6c757d; /* Text color for the button */
+}
+
+#button-profile:hover {
+    background-color: #d4d0b4;
+    color: #333; /* Text color on hover */
+}
+
+#search-button {
+    background-color: transparent;
+    border-color: #6c757d;
+    color: #6c757d;
+}
+
+
+#search-button:hover {
+    background-color: #d4d0b4;
+    color: #333;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 350px;
+    position: fixed;
+    z-index: 1;
+    top: 50%; /* Center vertically */
+    left: 25%; /* Center horizontally */
+    transform: translate(-25%, -50%);
+    background-color: #ebe7c8 ;
+    padding-top: 20px;
+    color: white;
+    border-right: 1px solid rgba(108, 117, 125, 0.5);
+
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    transition: 1.3s;
+    font-weight: bold;
+}
+
+.sidenav a:hover {
+    color: #969380;
+}
+
+.search-box {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+
+
+
+
+

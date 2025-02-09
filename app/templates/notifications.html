@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul class="messages">
+                {% for category, message in messages %}
+                    {% if category == 'index' %}
+                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                            {{ message }}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    <br>
+
+    <div style="text-align: center; padding-top: 20px;">
+        <h5>Notifications</h5>
+    </div>
+
+    <div class="main-content container text-center mt-5">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="posts">
+                    {% for friends_data, username in friends_data %}
+                        <div class="card-post card">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ username }}</h5>
+                                <td>
+                                    <a class="btn btn-secondary" href="{{ url_for('accept_friend', id=friends_data.friend_id)}}" role="button">Accept</a>
+                                </td>
+                                <td>
+                                    <a class="btn btn-secondary" href="{{ url_for('decline_friend', id=friends_data.friend_id)}}" role="button">Decline</a>
+                                </td>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
