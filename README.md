@@ -1,6 +1,6 @@
 # Web Application: Interlink  
 
-A **Flask-based web application** that provides user authentication, a social feed, friend connections, and a user profile system. The application supports many-to-many relationships and is designed with accessibility and usability in mind.
+A **Flask-based web application** that provides user authentication, a social feed, friend connections, and a user profile system.
 
 ## Features  
 
